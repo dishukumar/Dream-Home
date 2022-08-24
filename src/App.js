@@ -15,7 +15,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 import './App.css';
-import Home from './myComponent/Home';
+
 function App() {
   return (
 
@@ -75,11 +75,8 @@ function App() {
     </div>
   );
 
-   <div>
-    <Home/>
-   </div>
-
-  )
+   
+}
 
 
 
