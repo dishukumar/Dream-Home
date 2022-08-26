@@ -1,11 +1,116 @@
-import React from 'react';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import './contact.css';
+
 
 function contact(props) {
-    return (
-        <div>
-            <h2>contact us</h2>
-        </div>
-    );
-}
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [contact, setContact] = useState("");
+  const [message, setMessage] = useState("");
+  const navigate = useNavigate();
 
+  const CollectData = async () => {
+    console.log(name, email, contact, message);
+    let result = await fetch("http://localhost:5400/Enquiry", {
+      method: "post",
+      body: JSON.stringify({ name, email, contact, message }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    result = await result.json();
+    console.log(result);
+    if (result) {
+      navigate("/");
+    }
+
+   };
+    // return (
+    //       <div>
+    //   <div className="rows">
+    //       <div className="form">
+    //       <div className="" id="formBasicName">
+    //         <label>Name</label>
+    //         <input
+    //           type="Name"
+    //           placeholder="Enter Name"
+    //           value={name}
+    //           onChange={(e) => setName(e.target.value)}
+    //         />
+    //       </div>
+    //       <div className="" id="formBasicEmail">
+    //         <label>Email address</label>
+    //         <input
+    //           type="email"
+    //           placeholder="Enter email"
+    //           value={email}
+    //           onChange={(e) => setEmail(e.target.value)}
+    //         />
+    //       </div>
+    //       <div className="" id="formBasicContact">
+    //         <label>Contact No.</label>
+    //         <input
+    //           type="number"
+    //           placeholder="Enter Contact Number"
+    //           value={contact}
+    //           onChange={(e) => setContact(e.target.value)}
+    //         />
+    //       </div>
+    //       <div className="" id="formBasicMessage">
+    //         <label>Drop A Message</label>
+    //         <input
+    //           type="text"
+    //           placeholder="Enter Message"
+    //           value={message}
+    //           onChange={(e) => setMessage(e.target.value)}
+    //         />
+    //       </div>
+    //       <button variant="primary" type="submit" onClick={CollectData}>
+    //         Submit
+    //       </button>
+    //     </div>
+    //   </div>
+    //   </div>import Button from 'react-bootstrap/Button';
+
+    return (
+      <div>
+        <Form className="contactForm" >
+          <div className="abc">
+            <div className="rows">
+          <Form.Group className="" controlId="formBasicName">
+            <Form.Label>Name</Form.Label>
+            <Form.Control type="text" placeholder="Enter Name"  value={name}  onChange={(e) => setName(e.target.value)}/>
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control type="email" placeholder="Enter email"  value={email}  onChange={(e) => setEmail(e.target.value)}/>
+            <Form.Text className="text-muted">
+              We'll never share your email with anyone else.
+            </Form.Text>
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="formBasicContact">
+            <Form.Label>Contact</Form.Label>
+            <Form.Control type="num" placeholder="Enter Contact No."  value={contact}  onChange={(e) => setContact(e.target.value)}/>
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicMessage">
+            <Form.Label>Drop a message</Form.Label>
+            <Form.Control type="text" placeholder="Enter A Message" as ="textarea" rows ={3} value={message}  onChange={(e) => setMessage(e.target.value)} />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicCheckbox">
+            <Form.Check type="checkbox" label="Save my name, email and website in this browser for the next time i message" />
+          </Form.Group>
+          <Button variant="primary" onClick={CollectData} type="submit" className="button">
+            Submit
+          </Button>
+          </div>
+          </div>
+        </Form>
+      </div>
+    );
+  
+}
 export default contact;
