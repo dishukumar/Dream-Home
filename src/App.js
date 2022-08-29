@@ -25,7 +25,7 @@ function App() {
     <div className="App">
     
      <Router>
-       <Navbar bg="dark" expand="lg" variant='dark' className='navbar'>
+       <Navbar bg="dark" expand="lg" variant='dark' className='navbar' sticky="top">
       <Container fluid>
         
         <Navbar.Brand href="#">Dream Home</Navbar.Brand>

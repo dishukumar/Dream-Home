@@ -1,6 +1,7 @@
 /* .navbar{
     height: 100px;
 } */
+
 .bottom_nav{
    background: rgba(0, 0, 0, 0.8);
     color: white;
@@ -50,3 +51,4 @@
     line-height: 40px;
     padding-left: 20%;
 }
+

@@ -1,0 +1,26 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.contactForm{
+background: url("/public/img/contact/home-office-gc001f845d_1280.jpg");
+height: 41rem;
+width: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.abc{
+    /* background-color: red; */
+
+    margin: auto ;
+    width: 40%
+    
+
+ }
+/*.button{
+    margin-left: 15rem;
+    text-align: center;
+    
+} */
