@@ -1,3 +1,54 @@
 /* .navbar{
     height: 100px;
 } */
+
+.bottom_nav{
+   background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+.bottom_nav_blocks h3{
+    text-align: center;
+    padding: 20px 0px;
+}
+.bottom_nav_get_in_touch_content_icons{
+    text-align: center;
+    font-size: 30px;
+    
+}
+/* .bottom_nav_get_in_touch_content .row{
+    padding: 10px;
+    height: 100px;
+    margin-top: 20px;
+    
+} */
+.bottom_nav_get_in_touch_content_data{
+    padding: 2% 0px;
+    padding-left: 10%;
+    /* text-align: center; */
+    /* margin-top: 10px; */
+}
+.bottom_nav_about_content{
+    padding: 2% 5%;
+    
+}
+.bottom_nav_get_in_touch_content_data a{
+ color: white;
+ text-decoration: none;
+
+}
+.bottom_nav_get_in_touch_content_data p a:hover{
+ color: aqua;
+ text-decoration: none;
+ /* background-color: red; */
+
+}
+.nav_bottom_opening_hours_content ol{
+    list-style-type: none;
+    text-align: left;
+
+}
+.nav_bottom_opening_hours_content ol li{
+    line-height: 40px;
+    padding-left: 20%;
+}
+

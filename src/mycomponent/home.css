@@ -2,3 +2,92 @@
     height: 100vh;
     margin-top: -56px;
 }
+
+.home_card_img img{
+    width: 100%;
+    
+   
+}
+.home_card_img img:hover{
+    /* opacity: 0.8; */
+    transform: scale(1.2);
+
+    
+   
+}
+.home_card_img{
+    overflow: hidden;
+    position: relative;
+
+    
+   
+}
+
+.card_read{
+    display: none;
+    margin-top: -10px;
+    
+}
+  .card_read{
+    display: block;
+}
+.home_img_text{
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    /* top: 0; */
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    color: white;
+    transition: all 0.8s ease;
+    box-sizing: border-box;
+    /* background: black; */
+}
+.home_card_img:hover .home_img_text{
+    top: 0;
+}
+.home_img_text_align{
+    padding: 100px 15px;
+}
+
+.home_choose_heading{
+    text-align: center;
+    padding: 25px;
+}
+.home_choose_img img{
+    width: 100%;
+    height: 500px;
+}
+.home_choose_img_small_1 img{
+    width: 100%;
+    height: 240px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
+}
+.home_choose_img_small_2 img{
+    width: 100%;
+    height: 240px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.home_realiability{
+    height: 160px;
+    padding: 10px;
+}
+.home_expertise{
+    height: 180px;
+    padding: 10px;
+}
+.home_rquality{
+    height: 160px;
+    padding: 10px;
+}
+.home_choose_icon{
+    text-align: center;
+    font-size: 50px;
+    /* height: 166px; */
+}
