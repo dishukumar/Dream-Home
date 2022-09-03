@@ -11,7 +11,7 @@
 
 .header {
         background-color: #f1f1f1;
-        background-image: url(/public/Img/about/01.jpg);
+        background-image: url('/public/img/about/01.jpg');
         padding: 2rem;
         font-family: 'Times New Roman', Times, serif;
         font-size: medium;
@@ -32,7 +32,7 @@
 .Achive{
         padding-top: 20px;
         margin-top: 20px;
-        background-image: url(/public/Img/about/01.jpg);
+        background-image: url('/public/img/about/01.jpg');
         height: 100%;
         margin-left: 10%;
         width: 80%;
