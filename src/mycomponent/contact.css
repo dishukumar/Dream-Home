@@ -4,10 +4,11 @@
 }
 .contactForm{
 background: url("/public/img/contact/home-office-gc001f845d_1280.jpg");
-height: 41rem;
+height: 50rem;
 width: 100%;
 background-repeat: no-repeat;
 background-size: cover;
+/* padding-bottom: 100px; */
 
 }
 
@@ -15,10 +16,24 @@ background-size: cover;
     /* background-color: red; */
 
     margin: auto ;
-    width: 40%
+    width: 40%;
+    font-size: 20px;
+    font-weight: 500;
+   color: black;
+    font-family: 'Times New Roman', Times, serif;
     
 
  }
+.abc h1{
+    text-transform: uppercase;
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: darkcyan;
+    padding-bottom: 50px;
+    
+}
+
 /*.button{
     margin-left: 15rem;
     text-align: center;

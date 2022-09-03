@@ -2,16 +2,19 @@
         margin: 0;
         padding: 0;
 }
-.img img {
+/* .img img {
         padding-top: 2rem;
         margin-right: 3rem;
         height: 20rem;
         width: 100%;
-}
+} */
 
 .header {
         background-color: #f1f1f1;
+        /* background-image: url("./public/about/01.jpg"); */
+
         background-image: url('/public/img/about/01.jpg');
+
         padding: 2rem;
         font-family: 'Times New Roman', Times, serif;
         font-size: medium;
