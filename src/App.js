@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Routes,Route, Link} from 'react-router-dom'
 import Home from './mycomponent/home'
 import About from './mycomponent/About'
 import Contact from './mycomponent/contact'
+import Services from './mycomponent/services'
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -39,16 +40,18 @@ function App() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About Us</Nav.Link>
             <Nav.Link href="/contact">Contact Us</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
+            <Nav.Link href="/services">Services</Nav.Link>
+            {/* <NavDropdown title="Services" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="#action3">Architect</NavDropdown.Item>
+              <NavDropdown.Item href="#action4">Civil Engineer</NavDropdown.Item>
+              <NavDropdown.Item href="#action4">Interior Design</NavDropdown.Item>
+              <NavDropdown.Item href="#action4">Vastu Consultant</NavDropdown.Item>
+              <NavDropdown.Item href="#action4">Floor plan</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">
                 Something else here
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
             <Nav.Link href="#" disabled>
               Link
             </Nav.Link>
@@ -68,6 +71,7 @@ function App() {
     <Routes>
       <Route exact path = "/about" element ={<About/>}></Route>
       <Route exact path = "/" element ={ <Home/> }></Route>
+      <Route exact path = "/services" element ={ <Services/> }></Route>
      
       <Route exact path = "/contact" element ={<Contact/>}></Route>
       
