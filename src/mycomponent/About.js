@@ -7,6 +7,7 @@ function About(props) {
                 {/* <div className="rows"> */}
                 <div className='header'>
                     <h1>ABOUT</h1>
+                    <p>Dream Home is India's one of the best Architecture and Interior design Company. Dream Home specialized in customized floor plan,3D elevationa nd Interior Designing. It based on vastu with cost effective technique, client needs, including energy conscious and green design solutions.</p>
                 </div>
                 {/* </div> */}
                 <div className='container'>
@@ -18,7 +19,7 @@ function About(props) {
                         <p>Dream Home was started in 2015, it is online platform where Architects, Civil
                             engineers, Interior Designers and Marketing Professionals from different locations have joined hands to
                             provide cost effective architectural solutions. Our foremost objective is customer relations. We focus on
-                            quality through our fast response rate and premium quality. NakshaDekho.Com is planning to expand its
+                            quality through our fast response rate and premium quality. Dream Home.Com is planning to expand its
                             business model by working overseas.</p>
 
                     </div>

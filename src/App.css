@@ -5,6 +5,7 @@
 .bottom_nav{
    background: rgba(0, 0, 0, 0.8);
     color: white;
+    margin-top: 10px;
 }
 .bottom_nav_blocks h3{
     text-align: center;

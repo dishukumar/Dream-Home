@@ -3,7 +3,8 @@
     padding: 0%;
 }
 .contactForm{
-background: url("/public/img/contact/home-office-gc001f845d_1280.jpg");
+background: url("/img/contact/home-office-gc001f845d_1280.jpg");
+/* background-color: darkcyan; */
 height: 41rem;
 width: 100%;
 background-repeat: no-repeat;
