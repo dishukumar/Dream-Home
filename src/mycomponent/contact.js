@@ -28,52 +28,6 @@ function contact(props) {
     }
 
    };
-    // return (
-    //       <div>
-    //   <div className="rows">
-    //       <div className="form">
-    //       <div className="" id="formBasicName">
-    //         <label>Name</label>
-    //         <input
-    //           type="Name"
-    //           placeholder="Enter Name"
-    //           value={name}
-    //           onChange={(e) => setName(e.target.value)}
-    //         />
-    //       </div>
-    //       <div className="" id="formBasicEmail">
-    //         <label>Email address</label>
-    //         <input
-    //           type="email"
-    //           placeholder="Enter email"
-    //           value={email}
-    //           onChange={(e) => setEmail(e.target.value)}
-    //         />
-    //       </div>
-    //       <div className="" id="formBasicContact">
-    //         <label>Contact No.</label>
-    //         <input
-    //           type="number"
-    //           placeholder="Enter Contact Number"
-    //           value={contact}
-    //           onChange={(e) => setContact(e.target.value)}
-    //         />
-    //       </div>
-    //       <div className="" id="formBasicMessage">
-    //         <label>Drop A Message</label>
-    //         <input
-    //           type="text"
-    //           placeholder="Enter Message"
-    //           value={message}
-    //           onChange={(e) => setMessage(e.target.value)}
-    //         />
-    //       </div>
-    //       <button variant="primary" type="submit" onClick={CollectData}>
-    //         Submit
-    //       </button>
-    //     </div>
-    //   </div>
-    //   </div>import Button from 'react-bootstrap/Button';
 
     return (
       <div>
@@ -83,7 +37,7 @@ function contact(props) {
             <div className="rows">
           <Form.Group className="" controlId="formBasicName">
             <Form.Label>Name</Form.Label>
-            <Form.Control type="text" placeholder="Enter Name"  value={name}  onChange={(e) => setName(e.target.value)}/>
+            <Form.Control type="text" placeholder="Enter Name"  autoFocus value={name}  onChange={(e) => setName(e.target.value)}/>
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>

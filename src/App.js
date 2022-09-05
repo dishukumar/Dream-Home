@@ -15,12 +15,57 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { IoLocationOutline} from "react-icons/io5";
 import { GrMail} from "react-icons/gr";
 import { BsTelephoneInboundFill} from "react-icons/bs";
+import  { useState } from 'react';
+import Modal from 'react-bootstrap/Modal';
 
 
 
 import './App.css';
 
+
 function App() {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
+  const [login, setLogin] = useState(false);
+  
+  const handleClose = () => setLogin(false);
+  const handleShow = () => setLogin(true);
+
+  const [signup, setSignup] = useState(false);
+   const handClose = () => setSignup(false);
+  const handShow = () => setSignup(true);
+
+  const CollectData = async  () => {
+    console.log(email, password);
+    let result = await fetch("http://localhost:5400/Login", {
+      method: "post",
+      body: JSON.stringify({email,password }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    result = await result.json();
+    console.log(result);
+
+   };
+
+   const Data = async ()=>{
+    console.log(name, email, password, confirmPassword)
+    let result = await fetch("http://localhost:5400/Signup", {
+      method: "post",
+      body: JSON.stringify({ name, email, password, confirmPassword }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    result = await result.json();
+    console.log(result);
+   }
+
   return (
 
     <div className="App">
@@ -65,6 +110,12 @@ function App() {
             />
             <Button variant="outline-success">Search</Button>
           </Form>
+          <Button variant="outline-primary" onClick={handleShow}>
+        Login
+      </Button>
+          <Button variant="outline-primary" onClick={handShow}>
+        Signup
+      </Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
@@ -143,6 +194,98 @@ Dream-Home , shop no -409, MC Complex, Circular road ,Near Aggarsen Chowk, Rewar
      </div>
       </div>
     </div>
+    
+    {/* login section */}
+    <div>
+        <Modal show={login} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>LOGIN</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="name@example.com"
+                autoFocus value={email}  onChange={(e) => setEmail(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlTextarea1"
+            >
+              <Form.Label>Password</Form.Label>
+              <Form.Control type='password' placeholder='*******' value={password}  onChange={(e) => setPassword(e.target.value)} />
+            </Form.Group>
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={()=>{CollectData(); handleClose()}}>
+          Login
+          </Button>
+        </Modal.Footer>
+      </Modal>
+      </div>
+      {/* end of login section */}
+
+{/* signup section */}
+    <div>
+        <Modal show={signup} onHide={handClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>SIGNUP</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Name</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Rocky"
+                autoFocus value={name}  onChange={(e) => setName(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="name@example.com"
+                value={email}  onChange={(e) => setEmail(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                type="password"
+                placeholder="********"
+                value={password}  onChange={(e) => setPassword(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Confirm Password</Form.Label>
+              <Form.Control
+                type="password"
+                placeholder="********"
+                value={confirmPassword}  onChange={(e) => setConfirmPassword(e.target.value)}
+                
+              />
+            </Form.Group>
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={()=>{Data(); handClose()}}>
+            Signup
+          </Button>
+        </Modal.Footer>
+      </Modal>
+      </div>
+      {/* end signup section */}
     </div>
   );
 
