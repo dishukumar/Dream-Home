@@ -6,12 +6,9 @@ import Home from './mycomponent/home'
 import About from './mycomponent/About'
 import Contact from './mycomponent/contact'
 import Services from './mycomponent/services'
-<<<<<<< HEAD
 import Valuer from './mycomponent/valuer'
-=======
 import Exterior_design from './mycomponent/Exterior_design'
 import Layout_plan from './mycomponent/Layout_plan'
->>>>>>> 822bdfd0f6fc47687fd9ff9e8fdc377ccf2e2467
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -129,15 +126,10 @@ function App() {
       <Route exact path = "/about" element ={<About/>}></Route>
       <Route exact path = "/" element ={ <Home/> }></Route>
       <Route exact path = "/services" element ={ <Services/> }></Route>
-<<<<<<< HEAD
       <Route exact path = "/valuer" element ={ <Valuer/> }></Route>
-=======
       <Route exact path = "/exterior_design" element ={ <Exterior_design/> }></Route>
       <Route exact path = "/layout" element ={ <Layout_plan/> }></Route>
-     
->>>>>>> 822bdfd0f6fc47687fd9ff9e8fdc377ccf2e2467
       <Route exact path = "/contact" element ={<Contact/>}></Route>
-  >
    
     </Routes>
     </Router>
