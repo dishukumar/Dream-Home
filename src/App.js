@@ -6,6 +6,7 @@ import Home from './mycomponent/home'
 import About from './mycomponent/About'
 import Contact from './mycomponent/contact'
 import Services from './mycomponent/services'
+import Valuer from './mycomponent/valuer'
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -123,9 +124,9 @@ function App() {
       <Route exact path = "/about" element ={<About/>}></Route>
       <Route exact path = "/" element ={ <Home/> }></Route>
       <Route exact path = "/services" element ={ <Services/> }></Route>
-     
+      <Route exact path = "/valuer" element ={ <Valuer/> }></Route>
       <Route exact path = "/contact" element ={<Contact/>}></Route>
-      
+  >
    
     </Routes>
     </Router>

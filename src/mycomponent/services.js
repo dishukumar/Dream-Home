@@ -142,7 +142,7 @@ function services(props) {
                             <div className="service_block_services">
 
                                 <Card >
-                                    <Card.Img variant="top" src="/img/services/service.jpg" />
+                                    <Card.Img variant="top" src='/img/value/v7.jpg'height="135px" />
                                     <Card.Body>
                                         <Card.Title>valuer</Card.Title>
                                         <Card.Text>
@@ -152,7 +152,7 @@ function services(props) {
                                     </Card.Body>
 
                                     <Card.Body>
-                                        <Card.Link href="#">Card Link</Card.Link>
+                                        <Card.Link href="/valuer">Card Link</Card.Link>
 
                                     </Card.Body>
                                 </Card>
