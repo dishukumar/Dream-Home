@@ -205,21 +205,17 @@ function services(props) {
                                     </Card.Body>
 
                                     <Card.Body>
-<<<<<<< HEAD
-                                        <Card.Link href="/valuer">Card Link</Card.Link>
-
-=======
+                                        
                                        <div className="service_block_card_button">
                                             <button> 
                                             EXPLORE    
                                            
                                             </button>
-                                            <a href="#"><div className="service_card_block_hover">
+                                            <a href="/valuer"><div className="service_card_block_hover">
                                                 
                                                 </div></a>
                                             
                                         </div>
->>>>>>> 822bdfd0f6fc47687fd9ff9e8fdc377ccf2e2467
                                     </Card.Body>
                                 </Card>
                             </div>
