@@ -2,6 +2,7 @@ import React from 'react';
 import './services.css'
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
+import { Button } from 'bootstrap';
 
 function services(props) {
     return (
@@ -32,7 +33,16 @@ function services(props) {
                                     </Card.Body>
 
                                     <Card.Body>
-                                        <Card.Link href="#">Card Link</Card.Link>
+                                    <div className="service_block_card_button">
+                                     <button> 
+                                                EXPLORE
+                                           
+                                            </button>
+                                            <a href="/about"><div className="service_card_block_hover">
+                                                
+                                                </div></a>
+                                            
+                                        </div>
 
                                     </Card.Body>
                                 </Card>
@@ -42,7 +52,7 @@ function services(props) {
                             <div className="service_block_services">
 
                                 <Card >
-                                    <Card.Img variant="top" src="/img/services/service.jpg" />
+                                    <Card.Img variant="top" src="/img/exterior design/ed (1).jpg" />
                                     <Card.Body>
                                         <Card.Title>exterior desing</Card.Title>
                                         <Card.Text>
@@ -52,8 +62,16 @@ function services(props) {
                                     </Card.Body>
 
                                     <Card.Body>
-                                        <Card.Link href="#">Card Link</Card.Link>
-
+                                       <div className="service_block_card_button">
+                                            <button> 
+                                            EXPLORE    
+                                           
+                                            </button>
+                                            <a href="/exterior_design"><div className="service_card_block_hover">
+                                                
+                                                </div></a>
+                                            
+                                        </div>
                                     </Card.Body>
                                 </Card>
                             </div>
@@ -62,7 +80,7 @@ function services(props) {
                             <div className="service_block_services">
 
                                 <Card >
-                                    <Card.Img variant="top" src="/img/services/service.jpg" />
+                                    <Card.Img variant="top" src="/img/layout plan/lp.jpg" />
                                     <Card.Body>
                                         <Card.Title>layout plan</Card.Title>
                                         <Card.Text>
@@ -72,7 +90,17 @@ function services(props) {
                                     </Card.Body>
 
                                     <Card.Body>
-                                        <Card.Link href="#">Card Link</Card.Link>
+                                       
+                                        <div className="service_block_card_button">
+                                            <button> 
+                                            EXPLORE    
+                                           
+                                            </button>
+                                            <a href="/layout"><div className="service_card_block_hover">
+                                                
+                                                </div></a>
+                                            
+                                        </div>
 
                                     </Card.Body>
                                 </Card>
@@ -92,7 +120,16 @@ function services(props) {
                                     </Card.Body>
 
                                     <Card.Body>
-                                        <Card.Link href="#">layout plan</Card.Link>
+                                    <div className="service_block_card_button">
+                                            <button> 
+                                            EXPLORE    
+                                           
+                                            </button>
+                                            <a href="#"><div className="service_card_block_hover">
+                                                
+                                                </div></a>
+                                            
+                                        </div>
 
                                     </Card.Body>
                                 </Card>
@@ -112,7 +149,15 @@ function services(props) {
                                     </Card.Body>
 
                                     <Card.Body>
-                                        <Card.Link href="#">Exterior Design</Card.Link>
+                                    <div className="service_block_card_button">
+                                            <button> 
+                                                EXPLORE
+                                        </button>
+                                        <a href="/about"><div className="service_card_block_hover">
+                                                
+                                                </div></a>
+                                            
+                                        </div>
 
                                     </Card.Body>
                                 </Card>
@@ -132,8 +177,16 @@ function services(props) {
                                     </Card.Body>
 
                                     <Card.Body>
-                                        <Card.Link href="#">Card Link</Card.Link>
-
+                                       <div className="service_block_card_button">
+                                            <button> 
+                                            EXPLORE    
+                                           
+                                            </button>
+                                            <a href="#"><div className="service_card_block_hover">
+                                                
+                                                </div></a>
+                                            
+                                        </div>
                                     </Card.Body>
                                 </Card>
                             </div>
@@ -152,8 +205,21 @@ function services(props) {
                                     </Card.Body>
 
                                     <Card.Body>
+<<<<<<< HEAD
                                         <Card.Link href="/valuer">Card Link</Card.Link>
 
+=======
+                                       <div className="service_block_card_button">
+                                            <button> 
+                                            EXPLORE    
+                                           
+                                            </button>
+                                            <a href="#"><div className="service_card_block_hover">
+                                                
+                                                </div></a>
+                                            
+                                        </div>
+>>>>>>> 822bdfd0f6fc47687fd9ff9e8fdc377ccf2e2467
                                     </Card.Body>
                                 </Card>
                             </div>
@@ -172,8 +238,16 @@ function services(props) {
                                     </Card.Body>
 
                                     <Card.Body>
-                                        <Card.Link href="#">Card Link</Card.Link>
-
+                                       <div className="service_block_card_button">
+                                            <button> 
+                                            EXPLORE    
+                                           
+                                            </button>
+                                            <a href="#"><div className="service_card_block_hover">
+                                                
+                                                </div></a>
+                                            
+                                        </div>
                                     </Card.Body>
                                 </Card>
                             </div>
@@ -192,8 +266,16 @@ function services(props) {
                                     </Card.Body>
 
                                     <Card.Body>
-                                        <Card.Link href="#">Card Link</Card.Link>
-
+                                       <div className="service_block_card_button">
+                                            <button> 
+                                            EXPLORE    
+                                           
+                                            </button>
+                                            <a href="#"><div className="service_card_block_hover">
+                                                
+                                                </div></a>
+                                            
+                                        </div>
                                     </Card.Body>
                                 </Card>
                             </div>

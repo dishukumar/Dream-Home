@@ -1,0 +1,62 @@
+.exterior_design_head{
+    /* height: 50vh; */
+    position: relative;
+    overflow: hidden;
+    
+}
+.exterior_design_head img{
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+}
+.exterior_design_heading{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    /* z-index: -1; */ 
+}
+.exterior_design_heading h1{
+    margin: 10px auto;
+    width: 30%;
+    padding: 10px 20px;
+}
+.exterior_design_heading p{
+    margin: 10px auto;
+    width: 80%;
+    color: rgb(174, 37, 176);
+    padding: 10px 20px;
+}
+.exterior_design_tab  .nav-tabs .nav-link{
+    color: black;
+}
+.exterior_design_tab h2{
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.exterior_design_tab .nav-item button:hover{
+    /* width: 30%; */
+    background-color: black;
+    color: white;
+    /* text-align: center; */
+    /* margin: 10px auto; */
+}
+.exterior_design_tab img{
+    /* border: 2px solid red; */
+    /* object-fit: cover; */
+    margin: 5px;
+    border-radius: 20px;
+    height: 400px;
+    /* overflow: hidden; */
+}
+.exterior_design_tab img:hover{
+    opacity: 0.8;
+    /* transform: scale(0.8); */
+}
+.shop_ed img{
+    height: 250px;
+}
+.ed_cols{
+    overflow: hidden;
+    border-radius: 20px;
+}
