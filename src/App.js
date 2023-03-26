@@ -6,6 +6,14 @@ import Home from './mycomponent/home'
 import About from './mycomponent/About'
 import Contact from './mycomponent/contact'
 import Services from './mycomponent/services'
+import Building_plan_approval from './mycomponent/building_plan_approval';
+import Interior_Design from './mycomponent/interior_design'
+import Bed_Room from './mycomponent/bed_room'
+import Drawing_room from './mycomponent/Drawing_room';
+import Pooja_room from './mycomponent/Pooja_room';
+import Kitchen_room from './mycomponent/Kitchen_room';
+import Commercial_room from './mycomponent/Commercial_room';
+import Office_room from './mycomponent/Office_room';
 import Valuer from './mycomponent/valuer'
 import Exterior_design from './mycomponent/Exterior_design'
 import Layout_plan from './mycomponent/Layout_plan'
@@ -130,6 +138,14 @@ function App() {
       <Route exact path = "/exterior_design" element ={ <Exterior_design/> }></Route>
       <Route exact path = "/layout" element ={ <Layout_plan/> }></Route>
       <Route exact path = "/contact" element ={<Contact/>}></Route>
+      <Route exact path = "/building_plan_approval" element ={<Building_plan_approval/>}></Route>
+      <Route exact path = "/interior_design" element ={<Interior_Design/>}></Route>
+      <Route exact path = "/bed_room" element ={<Bed_Room/>}></Route>
+      <Route exact path = "/Drawing_room" element ={<Drawing_room/>}></Route>
+      <Route exact path = "/Pooja_room" element ={<Pooja_room/>}></Route>
+      <Route exact path = "/Kitchen_room" element ={<Kitchen_room/>}></Route>
+      <Route exact path = "/Commercial_room" element ={<Commercial_room/>}></Route>
+      <Route exact path = "/Office_room" element ={<Office_room/>}></Route>
    
     </Routes>
     </Router>

@@ -4,7 +4,8 @@ function valuer(props) {
   return (
     <div>
       <div className='valuer_img'>
-        {/* <img src="/img/about/01.jpg" alt="" /> */}
+        {/* <img src="/img/about/01.jpg" alt="" height="50vh" />  */}
+        
       </div>
 
       <h1>Card Flip with Text</h1>

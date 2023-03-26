@@ -1,0 +1,45 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container-heading h2{
+margin: 30px 20px ;
+text-align: center;
+text-transform: capitalize;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.img{
+    margin-top: 20px 20px;
+    padding-bottom: 20px;
+}
+
+.container-text{
+margin-top: 20px;
+font-family: 'Times New Roman', Times, serif;
+}
+.button{
+    text-align: center;
+    width: 100%;
+}
+.button{
+    width: 100%;
+    height: 50px;margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    
+}
+.container-text-text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+font-family: 'Times New Roman', Times, serif;
+}
+.container-design .card{
+    margin: 10px;
+}
+.container-design h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+
