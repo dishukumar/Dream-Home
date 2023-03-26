@@ -110,7 +110,7 @@ function services(props) {
                             <div className="service_block_services">
 
                                 <Card >
-                                    <Card.Img variant="top" src="/img/services/service.jpg" />
+                                    <Card.Img variant="top" src="/img/building_plan/1920.jpg" />
                                     <Card.Body>
                                         <Card.Title>Buildin plan approval</Card.Title>
                                         <Card.Text>
@@ -125,7 +125,7 @@ function services(props) {
                                             EXPLORE    
                                            
                                             </button>
-                                            <a href="#"><div className="service_card_block_hover">
+                                            <a href="/building_plan_approval"><div className="service_card_block_hover">
                                                 
                                                 </div></a>
                                             
@@ -139,7 +139,7 @@ function services(props) {
                             <div className="service_block_services">
 
                                 <Card >
-                                    <Card.Img variant="top" src="/img/services/service.jpg" />
+                                    <Card.Img variant="top" src="/img/interior/wall-1280.jpg" />
                                     <Card.Body>
                                         <Card.Title>interior Design</Card.Title>
                                         <Card.Text>
@@ -153,7 +153,7 @@ function services(props) {
                                             <button> 
                                                 EXPLORE
                                         </button>
-                                        <a href="/about"><div className="service_card_block_hover">
+                                        <a href="/interior_design"><div className="service_card_block_hover">
                                                 
                                                 </div></a>
                                             
