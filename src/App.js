@@ -33,12 +33,18 @@ import WhatsAppWidget from "react-whatsapp-chat-widget";
 import "react-whatsapp-chat-widget/index.css";
 // scroll to top
 import ScrollToTop from "react-scroll-to-top";
+import { useAuth0 } from "@auth0/auth0-react";
 
 import './App.css';
 
 
 function App() {
-
+  const { loginWithRedirect } = useAuth0();
+  const { logout } = useAuth0();
+  const { user, isAuthenticated, isLoading } = useAuth0();
+  // if (isLoading) {
+  //   return <div>Loading ...</div>;
+  // }
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -111,25 +117,29 @@ function App() {
                 Something else here
               </NavDropdown.Item>
             </NavDropdown> */}
-            <Nav.Link href="#" disabled>
+            {/* <Nav.Link href="#" disabled>
               Link
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
           <Form className="d-flex">
-            <Form.Control
+            {/* <Form.Control
               type="search"
               placeholder="Search"
               className="me-2"
               aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
+            /> */}
+            {/* <Button variant="outline-success">Search</Button> */}
           </Form>
-          <Button variant="outline-primary" onClick={handleShow}>
+          {/* <Button variant="outline-primary" onClick={handleShow}>
         Login
-      </Button>
-          <Button variant="outline-primary" onClick={handShow}>
+      </Button> */}
+      <Button variant="outline-primary" onClick={() => loginWithRedirect()}>Log In</Button>
+          {/* <Button variant="outline-primary" onClick={handShow}>
         Signup
-      </Button>
+      </Button> */}
+      <Button variant="outline-primary" style={{margin:"10px"}} onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+      Log Out
+    </Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

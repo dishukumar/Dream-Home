@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 // import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+import { Auth0Provider } from "@auth0/auth0-react";
 
 
 
@@ -14,7 +15,15 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    
-    <App/>
+    <Auth0Provider
+    domain="dev-altpygi74adk0eqc.us.auth0.com"
+    clientId="768ylttW8EbqwgtsvRp4ce9yivrs3xfG"
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }}
+  >
+    <App />
+  </Auth0Provider>
   
 
 );
