@@ -28,8 +28,11 @@ import { GrMail} from "react-icons/gr";
 import { BsTelephoneInboundFill} from "react-icons/bs";
 import  { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
-
-
+// whatsapp widget
+import WhatsAppWidget from "react-whatsapp-chat-widget";
+import "react-whatsapp-chat-widget/index.css";
+// scroll to top
+import ScrollToTop from "react-scroll-to-top";
 
 import './App.css';
 
@@ -85,7 +88,7 @@ function App() {
        <Navbar bg="dark" expand="lg" variant='dark' className='navbar' sticky="top">
       <Container fluid>
         
-        <Navbar.Brand href="#">Dream Home</Navbar.Brand>
+        <Navbar.Brand href="#"> <img src="/img/logo/logo.png" alt="" height="50px"/> </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -304,6 +307,37 @@ Dream-Home , shop no -409, MC Complex, Circular road ,Near Aggarsen Chowk, Rewar
           </Button>
         </Modal.Footer>
       </Modal>
+
+      <WhatsAppWidget
+            phoneNo="917404145334"
+            position="left"
+            widgetWidth="300px"
+            widgetWidthMobile="260px"
+            autoOpen={true}
+            autoOpenTimer={5000}
+            messageBox={true}
+            // messageBoxTxt="Hi Team, is there any related service available ?"
+            iconSize="50"
+            iconColor="white"
+            iconBgColor="green"
+            headerIcon="/img/logo/logo.png"
+            headerIconColor="green"
+            // headerIconColor="green"
+            headerIconBgColor="black"
+            headerTxtColor="black"
+            headerBgColor="green"
+            headerTitle="Dream Home"
+            headerCaption="Online"
+            // bodyBgColor="./public/images/wbg.png"
+            chatPersonName="Support"
+            chatMessage={<>Hi there 👋 <br /><br /> How can I help you?</>}
+            // footerBgColor="#999"
+            placeholder="Type a message.."
+            // btnBgColor="yellow"
+            btnTxt="Start Chat"
+            btnTxtColor="black"
+        />
+        <ScrollToTop smooth style={{backgroundColor: "green" ,marginBottom:"-22px"} } color='white' />
       </div>
       {/* end signup section */}
     </div>
