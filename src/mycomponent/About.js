@@ -1,4 +1,5 @@
 import React from 'react';
+import CountUp from 'react-countup';
 import './About.css';
 function About(props) {
     return (
@@ -58,16 +59,16 @@ function About(props) {
                     <h2>Our Achievement</h2>
                 <div className="row">
                     <div className='col-lg-3'>
-                        <p>400 <br></br> PROJECTS</p>
+                        <p><CountUp end={400} /> <br></br> PROJECTS</p>
                     </div>
                     <div className='col-lg-3'>
-                        <p>5 <br></br>AWARDS</p>
+                        <p><CountUp end={5} /><br></br>AWARDS</p>
                     </div>
                     <div className='col-lg-3'>
-                        <p> 5 <br></br>EMPLOYEES</p>
+                        <p><CountUp end={5} /> <br></br>EMPLOYEES</p>
                     </div>
                     <div className='col-lg-3'>
-                        <p>400+ <br></br>SATISFIED CLIENTS</p>
+                        <p><CountUp end={500} />+ <br></br>SATISFIED CLIENTS</p>
                     </div>
                 </div>
                 </div>
