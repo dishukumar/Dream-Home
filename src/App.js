@@ -133,13 +133,28 @@ function App() {
           {/* <Button variant="outline-primary" onClick={handleShow}>
         Login
       </Button> */}
-      <Button variant="outline-primary" onClick={() => loginWithRedirect()}>Log In</Button>
-          {/* <Button variant="outline-primary" onClick={handShow}>
-        Signup
-      </Button> */}
-      <Button variant="outline-primary" style={{margin:"10px"}} onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+     {
+        isAuthenticated && (
+          <div>
+            {/* <img src={user.picture} alt={user.name} /> */}
+            {/* <h2>{user.name}</h2> */}
+            <Button variant="outline-primary"> Welcome {user.email}</Button>
+          </div>
+        )
+      }
+      {
+      isAuthenticated ?(
+        <Button variant="outline-primary" style={{margin:"10px"}} onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
       Log Out
     </Button>
+      )
+      //     {/* <Button variant="outline-primary" onClick={handShow}>
+      //   Signup
+      // </Button> */}
+      :(
+      <Button variant="outline-primary" onClick={() => loginWithRedirect()}>Log In</Button>
+    )
+}
         </Navbar.Collapse>
       </Container>
     </Navbar>
@@ -163,6 +178,8 @@ function App() {
     </Routes>
     </Router>
     
+      
+      
     <div className="bottom_nav">
     <div className="container-fluid">
      <div className="container">
