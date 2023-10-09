@@ -10,16 +10,16 @@
 }
 
 .header {
-        background-color: #f1f1f1;
+        /* background-color: #f1f1f1; */
         /* background-image: url("./public/about/01.jpg"); */
 
-        background-image: url('/public/img/about/kitchen.jpg');
+        /* background-image: url('/public/img/about/kitchen.jpg'); */
 
-        padding: 2rem;
+        /* padding: 2rem;
         font-family: 'Times New Roman', Times, serif;
         font-size: medium;
         height: 25rem;
-        text-align: center;
+        text-align: center; */
       }
 
       .Who{

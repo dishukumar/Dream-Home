@@ -4,9 +4,11 @@ function About(props) {
     return (
         <div>
             <div className="container-fluid">
+            <img src="/img/about/kitchen.jpg" height="450px" width="100%"></img>
                 {/* <div className="rows"> */}
-                <div className='header'>
-                    <h1>ABOUT</h1>
+                <div className="header">
+                
+                    {/* <h1>ABOUT</h1> */}
                 </div>
                 {/* </div> */}
                 <div className='container'>
@@ -64,7 +66,7 @@ function About(props) {
                         <p>5 <br></br>AWARDS</p>
                     </div>
                     <div className='col-lg-3'>
-                        <p> 5 <br></br>EMPLOYEES</p>
+                        <p> 10 <br></br>EMPLOYEES</p>
                     </div>
                     <div className='col-lg-3'>
                         <p>400+ <br></br>SATISFIED CLIENTS</p>

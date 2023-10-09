@@ -57,18 +57,18 @@ function Contact(props) {
         <Form className="contactForm"  onSubmit={handleSubmit} >
           <div className="abc">
             <h1>CONTACT FORM</h1>
-            <h1>CONTACT FORM</h1>
             <div className="rows">
           <Form.Group className="" controlId="formBasicName">
             <Form.Label>Name</Form.Label>
-            <Form.Control name="name" type="text" placeholder="Enter Name"  autoFocus value={name}  onChange={(e) => setName(e.target.value)}/>
+            <Form.Control name="name" type="text" placeholder="Enter Name"  autoFocus value={name}  onChange={(e) => setName(e.target.value)} />
           </Form.Group>
+          
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control name="email" type="email" placeholder="Enter email"  value={email}  onChange={(e) => setEmail(e.target.value)}/>
-            <Form.Text className="text-muted">
+            {/* <Form.Text className="text-muted">
               We'll never share your email with anyone else.
-            </Form.Text>
+            </Form.Text> */}
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicContact">
@@ -79,9 +79,9 @@ function Contact(props) {
             <Form.Label>Drop a message</Form.Label>
             <Form.Control type="text" name="message" placeholder="Enter A Message" as ="textarea" rows ={3} value={message}  onChange={(e) => setMessage(e.target.value)} />
           </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicCheckbox">
+          {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="Save my name, email and website in this browser for the next time i message" />
-          </Form.Group>
+          </Form.Group> */}
           <Button variant="primary" onClick={CollectData} type="submit" className="button" value="send">
           {status}
           </Button>

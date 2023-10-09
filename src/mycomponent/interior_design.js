@@ -7,12 +7,14 @@ function interior_design(props) {
   return (
     <div>
       <div className="interior-block">
-        <div className="interior-block-heading">
+      <img src="/img/interior/wall-1280.jpg" height="500px" width="100%"></img>
+        {/* <div className="interior-block-heading">
           <h1>Interior Design</h1>
-        </div>
+        </div> */}
       </div>
       <div className="interior-block-check">
         <h1>Check For Interior Design</h1>
+        <hr></hr>
       </div>
       <div className="container">
         <div className="row">
@@ -23,10 +25,10 @@ function interior_design(props) {
                 <Card.Img variant="top" src="/img/interior/bed-1920.jpg" />
                 <Card.Body>
                   <Card.Title>Bed Room</Card.Title>
-                  <Card.Text>
+                  {/* <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
-                  </Card.Text>
+                  </Card.Text> */}
                 </Card.Body>
 
                 <Card.Body>
@@ -41,10 +43,10 @@ function interior_design(props) {
                 <Card.Img variant="top" src="/img/interior/drawing.jpg" />
                 <Card.Body>
                   <Card.Title>Drawing Room</Card.Title>
-                  <Card.Text>
+                  {/* <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
-                  </Card.Text>
+                  </Card.Text> */}
                 </Card.Body>
 
                 <Card.Body>
@@ -60,10 +62,10 @@ function interior_design(props) {
                 <Card.Img variant="top" src="/img/interior/home-1920.jpg" />
                 <Card.Body>
                   <Card.Title>Pooja Room</Card.Title>
-                  <Card.Text>
+                  {/* <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
-                  </Card.Text>
+                  </Card.Text> */}
                 </Card.Body>
 
                 <Card.Body>
@@ -80,10 +82,10 @@ function interior_design(props) {
                 <Card.Img variant="top" src="/img/interior/kitchen-1920.jpg" />
                 <Card.Body>
                   <Card.Title>Kitchen</Card.Title>
-                  <Card.Text>
+                  {/* <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
-                  </Card.Text>
+                  </Card.Text> */}
                 </Card.Body>
 
                 <Card.Body>
@@ -99,10 +101,10 @@ function interior_design(props) {
                 <Card.Img variant="top" src="/img/interior/commercial-1920.jpg" />
                 <Card.Body>
                   <Card.Title>Commercial Room</Card.Title>
-                  <Card.Text>
+                  {/* <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
-                  </Card.Text>
+                  </Card.Text> */}
                 </Card.Body>
 
                 <Card.Body>
@@ -118,10 +120,10 @@ function interior_design(props) {
                 <Card.Img variant="top" src="/img/interior/office-1920.jpg" />
                 <Card.Body>
                   <Card.Title>Office Room</Card.Title>
-                  <Card.Text>
+                  {/* <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
-                  </Card.Text>
+                  </Card.Text> */}
                 </Card.Body>
 
                 <Card.Body>
