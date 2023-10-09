@@ -33,12 +33,18 @@ import WhatsAppWidget from "react-whatsapp-chat-widget";
 import "react-whatsapp-chat-widget/index.css";
 // scroll to top
 import ScrollToTop from "react-scroll-to-top";
+import { useAuth0 } from "@auth0/auth0-react";
 
 import './App.css';
 
 
 function App() {
-
+  const { loginWithRedirect } = useAuth0();
+  const { logout } = useAuth0();
+  const { user, isAuthenticated, isLoading } = useAuth0();
+  // if (isLoading) {
+  //   return <div>Loading ...</div>;
+  // }
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -115,12 +121,17 @@ function App() {
               Link
             </Nav.Link> */}
           </Nav>
+
           {/* <Form className="d-flex">
             <Form.Control
+          <Form className="d-flex">
+            {/* <Form.Control
+
               type="search"
               placeholder="Search"
               className="me-2"
               aria-label="Search"
+
             />
             {/* <Button variant="outline-success">Search</Button> */}
           {/* </Form> */} 
@@ -130,6 +141,35 @@ function App() {
           <Button variant="outline-primary" onClick={handShow}>
         Signup
       </Button> */}
+            /> */}
+            {/* <Button variant="outline-success">Search</Button> */}
+          </Form>
+          {/* <Button variant="outline-primary" onClick={handleShow}>
+        Login
+      </Button> */}
+     {
+        isAuthenticated && (
+          <div>
+            {/* <img src={user.picture} alt={user.name} /> */}
+            {/* <h2>{user.name}</h2> */}
+            <Button variant="outline-primary"> Welcome {user.email}</Button>
+          </div>
+        )
+      }
+      {
+      isAuthenticated ?(
+        <Button variant="outline-primary" style={{margin:"10px"}} onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+      Log Out
+    </Button>
+      )
+      //     {/* <Button variant="outline-primary" onClick={handShow}>
+      //   Signup
+      // </Button> */}
+      :(
+      <Button variant="outline-primary" onClick={() => loginWithRedirect()}>Log In</Button>
+    )
+}
+
         </Navbar.Collapse>
       </Container>
     </Navbar>
@@ -153,6 +193,8 @@ function App() {
     </Routes>
     </Router>
     
+      
+      
     <div className="bottom_nav">
     <div className="container-fluid">
      <div className="container">

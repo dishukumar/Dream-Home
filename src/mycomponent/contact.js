@@ -57,6 +57,10 @@ function Contact(props) {
         <Form className="contactForm"  onSubmit={handleSubmit} >
           <div className="abc">
             <h1>CONTACT FORM</h1>
+
+
+            {/* <h1>CONTACT FORM</h1> */}
+
             <div className="rows">
           <Form.Group className="" controlId="formBasicName">
             <Form.Label>Name</Form.Label>

@@ -54,3 +54,6 @@
 .navbar-brand{
     background: url("/public/img/logo/logo.png");
 }
+.auth0-lock-header-welcome{
+    background-color: pink;
+}
