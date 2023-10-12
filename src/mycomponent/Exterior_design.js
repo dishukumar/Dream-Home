@@ -10,12 +10,12 @@ function Exterior_design(props) {
         <div>
            <div className="exterior_design_head">
             <img src="/img/exterior design/ed (1).jpg" alt="" />
-            <div className="exterior_design_heading">
+            {/* <div className="exterior_design_heading">
                 <h1>EXTERIOR DESIGN</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi, alias quo, esse accusantium quos maiores sequi eos harum ad impedit delectus? Alias ab similique in dolores eaque nostrum modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae veritatis amet cum natus, quo, temporibus eaque nam dolorem sit consequatur ullam vel qui laboriosam architecto ex ipsam. Necessitatibus, porro sint.
                 Provident, quo? Tenetur eos saepe veritatis error amet asperiores, ab minus nesciunt numquam eum quaerat quisquam repudiandae. Ea, molestias eos! Natus optio rem aliquam ullam magnam unde officiis, perspiciatis ipsum!
                 Magni id perferendis ratione. Sed, quasi. Exercitationem ex autem nam. Officiis magnam sint vero reprehenderit iste, dolor est nam nulla ad, architecto animi nesciunt ea! Excepturi facilis deserunt nulla laboriosam.</p>
-            </div>
+            </div> */}
            </div>
            <div className="exterior_design_tab">
             <h2>Our Work Samples....</h2>
@@ -104,4 +104,4 @@ function Exterior_design(props) {
     );
 }
 
-export default Exterior_design;
+export default Exterior_design;	
