@@ -18,10 +18,11 @@ function Layout_plan(props) {
                                 <h2>What is Layout Plan ?</h2>
                             </div>
                             <div className="layout_plan_content_data">
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque animi iusto, tempora sapiente consequatur beatae commodi optio quos accusantium voluptatibus nisi recusandae placeat culpa magnam nihil! Alias est tempore sit!
-                                    Distinctio temporibus voluptate ex dolor? Neque dolorem officiis perspiciatis laboriosam id repellendus non totam beatae, doloremque quos! Ipsa repellendus, vitae voluptates cupiditate, magni distinctio libero deserunt, in id eligendi pariatur.
-                                    Id dignissimos qui ipsum minima voluptatibus perspiciatis culpa libero earum ipsam optio corporis magni fuga cupiditate nostrum ab quasi, pariatur adipisci enim? A earum, vel dolorum molestiae officia labore? Odit.
-                                    Fugiat, aspernatur. Obcaecati totam explicabo deleniti unde repellendus voluptatem! Enim, ex! Distinctio, placeat ex perspiciatis ab exercitationem, pariatur nam, omnis nostrum </p>
+                                <p> <font size="4">Layout planning is deciding on the best physical arrangement of all resources that consume space within a facility. 
+                                    These resources might include a desk, a work center, a cabinet, a person, an entire office, or even a department. 
+                                    Decisions about the arrangement of resources in a business are not made only when a new facility is being designed; 
+                                    they are made any time there is a change in the arrangement of resources, such as a new worker being added, a machine being moved, or a change in procedure being implemented.
+                                     Also, layout planning is performed any time there is an expansion in the facility or a space reduction.</font></p>
                             </div>
 
                         </div>

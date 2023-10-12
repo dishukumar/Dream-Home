@@ -23,13 +23,13 @@ function services(props) {
                             <div className="service_block_services">
 
                                 <Card >
-                                    <Card.Img variant="top" src="/img/services/service.jpg" />
+                                    <Card.Img variant="top" src="/img/services/service.jpg" height="135px" />
                                     <Card.Body>
-                                        <Card.Title>architect</Card.Title>
-                                        <Card.Text>
+                                        <Card.Title>Architect</Card.Title>
+                                        {/* <Card.Text>
                                             Some quick example text to build on the card title and make up the
                                             bulk of the card's content.
-                                        </Card.Text>
+                                        </Card.Text> */}
                                     </Card.Body>
 
                                     <Card.Body>
@@ -52,13 +52,13 @@ function services(props) {
                             <div className="service_block_services">
 
                                 <Card >
-                                    <Card.Img variant="top" src="/img/exterior design/ed (1).jpg" />
+                                    <Card.Img variant="top" src="/img/exterior design/ed (1).jpg" height="135px" />
                                     <Card.Body>
-                                        <Card.Title>exterior desing</Card.Title>
-                                        <Card.Text>
+                                        <Card.Title>Exterior Design</Card.Title>
+                                        {/* <Card.Text>
                                             Some quick example text to build on the card title and make up the
                                             bulk of the card's content.
-                                        </Card.Text>
+                                        </Card.Text> */}
                                     </Card.Body>
 
                                     <Card.Body>
@@ -80,13 +80,13 @@ function services(props) {
                             <div className="service_block_services">
 
                                 <Card >
-                                    <Card.Img variant="top" src="/img/layout plan/lp.jpg" />
+                                    <Card.Img variant="top" src="/img/layout plan/lp.jpg" height="135px" />
                                     <Card.Body>
-                                        <Card.Title>layout plan</Card.Title>
-                                        <Card.Text>
+                                        <Card.Title>Layout Plan</Card.Title>
+                                        {/* <Card.Text>
                                             Some quick example text to build on the card title and make up the
                                             bulk of the card's content.
-                                        </Card.Text>
+                                        </Card.Text> */}
                                     </Card.Body>
 
                                     <Card.Body>
@@ -110,13 +110,13 @@ function services(props) {
                             <div className="service_block_services">
 
                                 <Card >
-                                    <Card.Img variant="top" src="/img/building_plan/1920.jpg" />
+                                    <Card.Img variant="top" src="/img/building_plan/1920.jpg" height="135px" />
                                     <Card.Body>
-                                        <Card.Title>Buildin plan approval</Card.Title>
-                                        <Card.Text>
+                                        <Card.Title>Building Plan Approval</Card.Title>
+                                        {/* <Card.Text>
                                             Some quick example text to build on the card title and make up the
                                             bulk of the card's content.
-                                        </Card.Text>
+                                        </Card.Text> */}
                                     </Card.Body>
 
                                     <Card.Body>
@@ -139,13 +139,13 @@ function services(props) {
                             <div className="service_block_services">
 
                                 <Card >
-                                    <Card.Img variant="top" src="/img/interior/wall-1280.jpg" />
+                                    <Card.Img variant="top" src="/img/interior/wall-1280.jpg" height="135px" />
                                     <Card.Body>
-                                        <Card.Title>interior Design</Card.Title>
-                                        <Card.Text>
+                                        <Card.Title>Interior Design</Card.Title>
+                                        {/* <Card.Text>
                                             Some quick example text to build on the card title and make up the
                                             bulk of the card's content.
-                                        </Card.Text>
+                                        </Card.Text> */}
                                     </Card.Body>
 
                                     <Card.Body>
@@ -163,7 +163,7 @@ function services(props) {
                                 </Card>
                             </div>
                         </div>
-                        <div className="col-lg-4">
+                        {/* <div className="col-lg-4">
                             <div className="service_block_services">
 
                                 <Card >
@@ -190,18 +190,18 @@ function services(props) {
                                     </Card.Body>
                                 </Card>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="col-lg-4">
                             <div className="service_block_services">
 
                                 <Card >
                                     <Card.Img variant="top" src='/img/value/v7.jpg'height="135px" />
                                     <Card.Body>
-                                        <Card.Title>valuer</Card.Title>
-                                        <Card.Text>
+                                        <Card.Title>Valuer</Card.Title>
+                                        {/* <Card.Text>
                                             Some quick example text to build on the card title and make up the
                                             bulk of the card's content.
-                                        </Card.Text>
+                                        </Card.Text> */}
                                     </Card.Body>
 
                                     <Card.Body>
@@ -220,7 +220,7 @@ function services(props) {
                                 </Card>
                             </div>
                         </div>
-                        <div className="col-lg-4">
+                        {/* <div className="col-lg-4">
                             <div className="service_block_services">
 
                                 <Card >
@@ -247,8 +247,8 @@ function services(props) {
                                     </Card.Body>
                                 </Card>
                             </div>
-                        </div>
-                        <div className="col-lg-4">
+                        </div> */}
+                        {/* <div className="col-lg-4">
                             <div className="service_block_services">
 
                                 <Card >
@@ -275,7 +275,7 @@ function services(props) {
                                     </Card.Body>
                                 </Card>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

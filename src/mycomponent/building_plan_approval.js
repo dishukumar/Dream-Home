@@ -77,13 +77,14 @@ function Building_plan_approval(props) {
     <div>
       {/* <div className="container-fluid"> */}
         <div className="head">
-          <h1 className="heading">Building Plan Approval</h1>
+        <img src="/img/building_plan/1921.jpg" height="350px" width="100%"></img>
+          {/* <h1 className="heading">Building Plan Approval</h1> */}
         </div>
         <div className="container">
           <div className="building_plan">
             <div className="row">
               <div className="col-lg-6">
-                <h2 className="h2">Building Plan</h2>
+                <h2 className="h2" >Building Plan</h2>
                 <p className="p">
                   e-Building Plan Approval is an e-Governance service where
                   applicants can submit application for approval of Building
@@ -105,16 +106,16 @@ function Building_plan_approval(props) {
                 </div>
               </div>
               <div className="container">
-                <div className="button">
+                {/* <div className="button">
                   <Button variant="outline-primary" onClick={handShow} className="b1">
                     Register
                   </Button>
                   <Button variant="outline-primary" onClick={handleShow} className="b2">
                     Login
                   </Button>
-                </div>
+                </div> */}
                 {/* login section */}
-                <div>
+                {/* <div>
                   <Modal show={login} onHide={handleClose}>
                     <Modal.Header closeButton>
                       <Modal.Title>LOGIN</Modal.Title>
@@ -163,11 +164,11 @@ function Building_plan_approval(props) {
                       </Button>
                     </Modal.Footer>
                   </Modal>
-                </div>
+                </div> */}
                 {/* end of login section */}
 
                 {/* signup section */}
-                <div>
+                {/* <div>
                   <Modal show={signup} onHide={handClose}>
                     <Modal.Header closeButton>
                       <Modal.Title>REGISTER</Modal.Title>
@@ -241,7 +242,7 @@ function Building_plan_approval(props) {
                       </Button>
                     </Modal.Footer>
                   </Modal>
-                </div>
+                </div> */}
                 {/* end signup section */}
               </div>
             </div>

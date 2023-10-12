@@ -188,7 +188,7 @@ function App() {
           <div className="col-lg-4">
             <h3>ABOUT US</h3>
             <div className="bottom_nav_about_content">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam velit atque eum consequatur commodi tempora earum maxime perferendis doloremque! Perspiciatis ut porro quas facilis atque, sit molestiae inventore doloremque quae!
+              <p>Dream Home was started in 2015, it is online platform where Architects, Civil engineers, Interior Designers and Marketing Professionals from different locations have joined hands to provide cost effective architectural solutions.
               </p>
             </div>
           </div>
