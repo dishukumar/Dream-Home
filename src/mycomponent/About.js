@@ -5,7 +5,7 @@ function About(props) {
     return (
         <div>
             <div className="container-fluid">
-            <img src="/img/about/kitchen.jpg" height="450px" width="100%"></img>
+            <img src="/img/about/adaptive.png" height="450px" width="100%"></img>
                 {/* <div className="rows"> */}
                 <div className="header">
                 
@@ -57,7 +57,7 @@ function About(props) {
                     </div>
                     </div>
                 </div>
-                <div className='Achive'>
+                <div className='Achive' >
                     <h2>Our Achievement</h2>
                 <div className="row">
                     <div className='col-lg-3'>
