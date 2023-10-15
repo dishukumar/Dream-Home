@@ -37,14 +37,14 @@ function Pooja_room(props) {
          </div>
        </div>
      </div>
-     <div className="button">
+     {/* <div className="button">
        <a href="/contact">
          <Button variant="success" className="button">
            
            Book Now
          </Button>
        </a>
-     </div>
+     </div> */}
      <div className="container-design">
        <h1>Pooja Room Design</h1>
        <div className="row">

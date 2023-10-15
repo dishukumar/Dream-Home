@@ -4,7 +4,7 @@
 }
 
 .head{
-    background-image:url("/public/img/building_plan/1921.jpg");
+    /* background-image:url("/public/img/building_plan/1921.jpg"); */
     background-size: cover;
     /* margin: 0px; */
     /* padding: 0px; */
@@ -33,6 +33,7 @@
  }
  .h2{
     margin-top: 40px;
+    text-align: center;
  }
 
  .p{
@@ -55,6 +56,6 @@ margin-bottom: 20px;
     margin-bottom: 20px;
     
 }
-.button{
+/* .button{
     text-align: center;
-}
+} */

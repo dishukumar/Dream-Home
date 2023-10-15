@@ -121,12 +121,26 @@ function App() {
               Link
             </Nav.Link> */}
           </Nav>
+
+          {/* <Form className="d-flex">
+            <Form.Control
           <Form className="d-flex">
             {/* <Form.Control
+
               type="search"
               placeholder="Search"
               className="me-2"
               aria-label="Search"
+
+            />
+            {/* <Button variant="outline-success">Search</Button> */}
+          {/* </Form> */} 
+          {/* <Button variant="outline-primary" onClick={handleShow}>
+        Login
+      </Button>
+          <Button variant="outline-primary" onClick={handShow}>
+        Signup
+      </Button> */}
             /> */}
             {/* <Button variant="outline-success">Search</Button> */}
           </Form>
@@ -155,6 +169,7 @@ function App() {
       <Button variant="outline-primary" onClick={() => loginWithRedirect()}>Log In</Button>
     )
 }
+
         </Navbar.Collapse>
       </Container>
     </Navbar>
@@ -246,7 +261,7 @@ Dream-Home , shop no -409, MC Complex, Circular road ,Near Aggarsen Chowk, Rewar
     </div>
     
     {/* login section */}
-    <div>
+    {/* <div>
         <Modal show={login} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>LOGIN</Modal.Title>
@@ -279,11 +294,11 @@ Dream-Home , shop no -409, MC Complex, Circular road ,Near Aggarsen Chowk, Rewar
           </Button>
         </Modal.Footer>
       </Modal>
-      </div>
+      </div> */}
       {/* end of login section */}
 
 {/* signup section */}
-    <div>
+     <div>
         <Modal show={signup} onHide={handClose}>
         <Modal.Header closeButton>
           <Modal.Title>SIGNUP</Modal.Title>
@@ -365,7 +380,7 @@ Dream-Home , shop no -409, MC Complex, Circular road ,Near Aggarsen Chowk, Rewar
             btnTxtColor="black"
         />
         <ScrollToTop smooth style={{backgroundColor: "green" ,marginBottom:"-22px"} } color='white' />
-      </div>
+      </div> 
       {/* end signup section */}
     </div>
   );

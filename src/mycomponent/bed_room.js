@@ -38,14 +38,14 @@ function bed_room(props) {
             </div>
           </div>
         </div>
-        <div className="button">
+        {/* <div className="button">
           <a href="/contact">
             <Button variant="success" className="button">
               
               Book Now
             </Button>
           </a>
-        </div>
+        </div> */}
         <div className="container-text-text">
         <h5>Why is <strong> Bed Room</strong> decor necessary?</h5>
         <p>
