@@ -1,7 +1,7 @@
 .services_image{
     height: 400px;
     width: 100%;
-    background: url('/public/img/services/service.jpg');
+    background: url('/public/img/services/service\ \(1\).png');
     background-size: cover;
 }
 .services_image img{

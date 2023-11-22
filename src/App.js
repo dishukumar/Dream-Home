@@ -6,6 +6,7 @@ import Home from './mycomponent/home'
 import About from './mycomponent/About'
 import Contact from './mycomponent/contact'
 import Services from './mycomponent/services'
+import Architect from'./mycomponent/Architect'
 import Building_plan_approval from './mycomponent/building_plan_approval';
 import Interior_Design from './mycomponent/interior_design'
 import Bed_Room from './mycomponent/bed_room'
@@ -166,6 +167,7 @@ function App() {
       <Route exact path = "/exterior_design" element ={ <Exterior_design/> }></Route>
       <Route exact path = "/layout" element ={ <Layout_plan/> }></Route>
       <Route exact path = "/contact" element ={<Contact/>}></Route>
+      <Route exact path = "/architect" element ={<Architect/>}></Route>
       <Route exact path = "/building_plan_approval" element ={<Building_plan_approval/>}></Route>
       <Route exact path = "/interior_design" element ={<Interior_Design/>}></Route>
       <Route exact path = "/bed_room" element ={<Bed_Room/>}></Route>

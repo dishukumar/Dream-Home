@@ -23,7 +23,7 @@ function services(props) {
                             <div className="service_block_services">
 
                                 <Card >
-                                    <Card.Img variant="top" src="/img/services/service.jpg" height="135px" />
+                                    <Card.Img variant="top" src="/img/services/arch(1).png" height="135px" />
                                     <Card.Body>
                                         <Card.Title>Architect</Card.Title>
                                         {/* <Card.Text>
@@ -38,7 +38,7 @@ function services(props) {
                                                 EXPLORE
                                            
                                             </button>
-                                            <a href="/about"><div className="service_card_block_hover">
+                                            <a href="/Architect"><div className="service_card_block_hover">
                                                 
                                                 </div></a>
                                             
