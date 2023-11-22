@@ -6,7 +6,7 @@ import { useState } from "react";
 import Form from "react-bootstrap/Form";
 import { useNavigate } from "react-router-dom"
 
-function Building_plan_approval(props) {
+function Architect(props) {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -76,12 +76,12 @@ function Building_plan_approval(props) {
     return (
         <div>
             {/* <div className="container-fluid"> */}
-            <div className="head">
+            <div className="xyz">
                 {/* <img src="/img/architect/1921.jpg" height="350px" width="100%"></img> */}
                 {/* <h1 className="heading">Building Plan Approval</h1> */}
             </div>
             <div className="container">
-                <div className="building_plan">
+                <div className="architect_plan">
                     <div className="row">
                         <div className="col-lg-6">
                             <h2 className="h2" >Architect Plan</h2>
@@ -249,4 +249,5 @@ function Building_plan_approval(props) {
     );
 }
 
-export default Building_plan_approval;
+
+export default Architect;
